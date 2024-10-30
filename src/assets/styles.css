@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+	* {
+		@apply border-border ring-ring ring-offset-background;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+
+	svg {
+		@apply shrink-0;
+	}
+}
+
+@layer components {
+	.label-text {
+		@apply text-sm font-semibold;
+	}
+
+	.description-text {
+		@apply text-sm text-neutral-500;
+	}
+
+	.error-text {
+		@apply text-sm text-red-500;
+	}
+}
